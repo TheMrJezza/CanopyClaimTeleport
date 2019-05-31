@@ -1,13 +1,17 @@
 name: ClaimTeleport
-main: me.Albert.Claimteleport.Main
-version: 1.0.8
-author: Albert
+main: me.Albert.Claimteleport.CTMain
+version: 2.0.0
+authors: [Albert, TheMrJezza]
+softdepend: [GriefPrevention]
 commands:
-    claimteleport:
-        description: Teleport to a Claim
-        usage: /ClaimTeleport
-        aliases: [ctp, claimtp]
-    ctpreload:
-        description: Reload Plugin Config
-        permission: ctp.reload
-    
+  claimteleport:
+    description: Teleport to a Claim
+      usage: /ClaimTeleport
+      aliases: [ctp, claimtp]
+  ctpreload:
+    description: Reload Plugin Config
+permissions:
+  ctp.reload:
+    default: op
+  ctp.use:
+    default: op

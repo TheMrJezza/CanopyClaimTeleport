@@ -1,28 +1,34 @@
+# ==================================================================== 
+#   ______   _          __     ___   __   __        _______   ______
+#  [ _____] [ ]       _[__]_  [_ _] [  ]_[  ]      [__   __] [ ____ ]
+#  [ ]      [ ]      [ ]__[ ]  [ ]  [ ][_][ ]         [ ]    [ ]__[ ]
+#  [ ]____  [ ]____  [ ____ ]  [ ]  [ ]   [ ]         [ ]    [ _____]
+#  [______] [______] [_]  [_] [___] [_]   [_]         [_]    [_]
+# 
+# ====================================================================
+
+#
+#
+#
 Messages:
+  AboutToTeleport: "&ADon't Move! You will be teleported in &e{DELAY} &aseconds!"
   TeleportSuccess: "&aTeleporting..."
-  Teleporting: "&cTelepot in %s% seconds,please do not move..."
-  playermoved: "&cYou moved teleport canceled!"
-  incooldown: "&cYou are still in teleport cooldown"
+  Teleporting: "&cTelepot in %s% seconds, please do not move..."
+  PlayerMoved: "&cYou moved teleport canceled!"
   NoPermission: "&cYou dont have permission!"
   InvalidClaimID: "&cInvalid ClaimID"
   NotNumeric: "&cPlease insert valid numbers!"
   NullInput: "&cWrong command usage"
   InvalidPlayer: "&cPlayer not found!"
-  
-Sound:
-  Enabled: true
-  
- #teleport delay , in seconds
-delay: 3
+#
+# 
+EnableSound: true
 
- #Chinese language
-#Messages:
-  #TeleportSuccess: "&a已传送"
-  #Teleporting: "&c将会在%s%秒内传送,请不要移动"
-  #playermoved: "&c你移动了!传送取消!"
-  #incooldown: "&c你正在传送冷却中"
-  #NoPermission: "&c你没有权限!"
-  #InvalidClaimID: "&c错误的领地ID"
-  #NotNumeric: "&c错误的指令用法!"
-  #NullInput: "&c错误的指令用法"
-  #InvalidPlayer: "&c玩家没有找到!"
+# The Teleport Delay (Or Countdown) is used to delay the teleport.
+TeleportDelay:
+  #
+  # How long should the delay be, in seconds? Set to 0 or lower to disable.
+  TimeInSeconds: 3
+  #
+  # Should the teleport be cancelled if the player moves?
+  CancelOnMove: true
