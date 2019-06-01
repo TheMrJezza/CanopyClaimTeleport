@@ -1,10 +1,10 @@
-package me.Albert.Claimteleport.commands;
+package com.canopymc.claim_teleport.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-import me.Albert.Claimteleport.Settings;
+import com.canopymc.claim_teleport.Settings;
 
 public class CTPReloadCMD implements CommandExecutor {
 

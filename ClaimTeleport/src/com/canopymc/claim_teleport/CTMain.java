@@ -1,4 +1,4 @@
-package me.Albert.Claimteleport;
+package com.canopymc.claim_teleport;
 
 import java.util.HashMap;
 import java.util.UUID;
@@ -16,13 +16,13 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
-import me.Albert.Claimteleport.commands.CTPReloadCMD;
-import me.Albert.Claimteleport.commands.ClaimTPCMD;
+import com.canopymc.claim_teleport.commands.CTPReloadCMD;
+import com.canopymc.claim_teleport.commands.ClaimTPCMD;
 
 public class CTMain extends JavaPlugin implements Listener {
 	private PluginManager pm = Bukkit.getPluginManager();
 	private static CTMain instance;
-	
+
 	private static HashMap<UUID, BukkitTask> countdowns = new HashMap<>();
 
 	public void onEnable() {
@@ -64,7 +64,7 @@ public class CTMain extends JavaPlugin implements Listener {
 	public static HashMap<UUID, BukkitTask> getCountdowns() {
 		return countdowns;
 	}
-	
+
 	@EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
 	public void onPlayerMove(PlayerMoveEvent evt) {
 		BukkitTask task = countdowns.remove(evt.getPlayer().getUniqueId());

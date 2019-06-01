@@ -1,4 +1,4 @@
-package me.Albert.Claimteleport.commands;
+package com.canopymc.claim_teleport.commands;
 
 import java.util.UUID;
 import java.util.Vector;
@@ -14,11 +14,11 @@ import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 
+import com.canopymc.claim_teleport.CTMain;
+import com.canopymc.claim_teleport.Settings;
+import com.canopymc.claim_teleport.Sounds;
 import com.google.common.primitives.Ints;
 
-import me.Albert.Claimteleport.CTMain;
-import me.Albert.Claimteleport.Settings;
-import me.Albert.Claimteleport.Sounds;
 import me.ryanhamshire.GriefPrevention.Claim;
 import me.ryanhamshire.GriefPrevention.GriefPrevention;
 import me.ryanhamshire.GriefPrevention.PlayerData;

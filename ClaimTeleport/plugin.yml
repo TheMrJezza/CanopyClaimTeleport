@@ -1,12 +1,12 @@
-name: ClaimTeleport
-main: me.Albert.Claimteleport.CTMain
+name: CanopyClaimTeleport
+main: com.canopymc.claim_teleport.CTMain
 version: 2.0.0
-authors: [Albert, TheMrJezza]
+authors: [TheMrJezza, Albert]
 softdepend: [GriefPrevention]
 commands:
   claimteleport:
     description: Teleport to a Claim
-      usage: /ClaimTeleport
+      usage: /<command>
       aliases: [ctp, claimtp]
   ctpreload:
     description: Reload Plugin Config

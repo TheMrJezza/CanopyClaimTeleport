@@ -1,4 +1,4 @@
-package me.Albert.Claimteleport;
+package com.canopymc.claim_teleport;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Sound;

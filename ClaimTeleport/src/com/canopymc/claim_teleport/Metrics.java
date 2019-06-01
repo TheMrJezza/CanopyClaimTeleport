@@ -1,4 +1,4 @@
-package me.Albert.Claimteleport;
+package com.canopymc.claim_teleport;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
